@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Document</title>
+    <link href="site.css" rel="stylesheet"/>
+    
+  </head>
+  <body>
+
+    <header>
+      <div class="header-wrapper">
+        <div class="header-nav">
+          <div class="header-nav-wrapper">
+            <nav class="header-nav-list">
+              <a href="" class="nav-item">Home</a>
+              <a href="" class="nav-item">Shop</a>
+              <a href="" class="nav-item">Collabs</a>
+              <a href="" class="nav-item">About</a>
+              <a href="" class="nav-item">Social</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="site-wrapper">
+      <section class="homepage-content">
+	<div class="featured">
+	  <div class="featured-wrapper">
+	    
+            <div class="featured-background">
+              <div class="featured-background-wrapper">
+                <img class="background" alt="" src=""/>
+              </div>
+            </div>
+	    
+	    <div class="featured-info">
+	      <div class="featured-info-wrapper">
+		<h1 class="featured-title">YEAR THREE</h1>
+		<h3 class="featured-subtitle">A Time For Celebration</h3>
+	      </div>
+	    </div>
+
+	    <div class="featured-link">
+	      <div class="featured-link-wrapper">
+		<a href="#link">Shop Now!</a>
+	      </div>
+	    </div>
+	    
+	  </div>
+	</div>
+      </section>
+      <section class="homepage-content"></section>
+      <section class="homepage-content"></section>
+    </div>
+    
+  </body>
+</html>
