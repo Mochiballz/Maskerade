@@ -233,6 +233,7 @@ footer {
   }
 
   .header-nav-list {
+      margin-right: 50px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
