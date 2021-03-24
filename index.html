@@ -34,7 +34,8 @@
       <section class="homepage-content">
 	<div class="featured">
 	    
-          <img class="background" alt="" src="assets/maskerade_3girls.png"/>
+          <img class="background fade" alt="" src="assets/hadeel_mask.jpeg"/>
+	  <img class="background fade" alt="" src="assets/maskerade_3girls.png"/>
 	  <div class="featured-info">
 	    
 	    <h1 class="featured-title">"YEAR THREE"</h1>
@@ -75,8 +76,27 @@
 	</div>
       </section>
 
-      <footer></footer>
+      <footer>
+	<p>Sagittis, purus sit amet volutpat consequat, mauris nunc congue nisi, vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra? Auctor eu augue ut lectus arcu, bibendum at varius vel, pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc aliquet bibendum enim, facilisis gravida neque convallis!</p>
+      </footer>
     </div>
+
+    <script>
+      var slideIndex = 0;
+      carousel();
+
+      function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("background");
+	  for (i = 0; i < x.length; i++) {
+	      x[i].style.display = "none";
+	  }
+	  slideIndex++;
+	  if (slideIndex > x.length) {slideIndex = 1}
+	  x[slideIndex-1].style.display = "block";
+	  setTimeout(carousel, 4000); // Change image every 2 seconds
+      }
+      </script>
     
   </body>
 </html>

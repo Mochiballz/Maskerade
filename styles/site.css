@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    background: #151515;
     color: #e1e1e1;
 }
 
@@ -37,9 +38,8 @@ header {
 }
 
 .header-wrapper {
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    background-image: linear-gradient(rgb(31, 31, 31) 2%, rgb(38, 37, 41) 90%);
 }
 
 .header-logo {
@@ -59,10 +59,8 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
-
-    background: #262529;
-    background-image: linear-gradient(rgb(38, 37, 41) 20%, rgb(31, 31, 31) 100%);
     z-index: 10;
+    background: #151515;
 }
 
 .header-nav-list {
@@ -95,12 +93,11 @@ header {
 .homepage-content {
     margin: 0px;
     padding: 0px;
-    background: #262529;
 }
 
 .featured {
     position: relative;
-    max-height: 800px;
+    height: 500px;
     overflow: hidden;
     box-shadow: 0px 1px 20px #000000;
 }
@@ -201,7 +198,17 @@ header {
 }
 
 .gallery-image {
-    margin: 0px;
+    margin: 12px;
+    box-shadow:
+	0 0 0 6px black;
+    border-radius: 2px;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.gallery-image:hover {
+    box-shadow:
+	0 0 0 6px #FFD008;
+    transform: scale(1.01, 1.01);
 }
 
 .gallery-image img {
@@ -209,12 +216,59 @@ header {
 }
 
 footer {
-    margin-left: auto;
-    margin-right: auto;
-    background: #322828;
-    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 40px;
+    background: #262529;
 }
 
+footer * {
+    max-width: 700px;
+}
+
+@media screen and (min-width: 1000px) {
+    .featured {
+	position: relative;
+	height: 720px;
+	overflow: hidden;
+	box-shadow: 0px 1px 20px #000000;
+    }
+
+    .background {
+	width: 100%;
+	transform: translateY(-10%);
+    }
+}
+
+.fade {
+    -webkit-animation: fade 1.5s;
+    animation: fade 1.5s;
+    -moz-animation: fade 1.5s;
+    -o-animation: fade 1.5s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0.1} 
+    100%{opacity: 1}
+}
+
+@-moz-keyframes fade {
+    0% {opacity: 0.1} 
+    100%{opacity: 1}
+}
+
+@keyframes fade {
+    0% {opacity: 0.1} 
+    100%{opacity: 1}
+}
+@-o-keyframes fade {
+    0% {opacity: 0.1} 
+    100%{opacity: 1}
+}
+
+/*
 @media screen and (min-width: 1000px) {
   .header-nav-wrapper {
       margin: 0px;
@@ -240,3 +294,4 @@ footer {
   }
 
 }
+*/
